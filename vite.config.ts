@@ -8,7 +8,7 @@ import vueDevTools from 'vite-plugin-vue-devtools'
 // GITHUB PAGES: set VITE_BASE_PATH to your repo name, e.g. /yst-apps/
 // Or update the base value below before deploying.
 export default defineConfig({
-  base: process.env.VITE_BASE_PATH ?? '/',
+  base: '/yst-apps/',
   plugins: [
     vue(),
     vueDevTools(),
