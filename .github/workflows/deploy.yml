@@ -28,9 +28,6 @@ jobs:
 
       - name: Build
         run: npm run build-only
-        env:
-          # Replace /yst-apps/ with your actual GitHub repository name
-          VITE_BASE_PATH: /yst-apps/
 
       - uses: actions/upload-pages-artifact@v3
         with:
