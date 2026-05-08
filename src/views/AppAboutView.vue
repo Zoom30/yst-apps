@@ -77,6 +77,11 @@ export default defineComponent({
           </ul>
         </div>
 
+        <div v-if="app.supportEmail" class="support">
+          <h2 class="section-label">Support</h2>
+          <a :href="`mailto:${app.supportEmail}`" class="link">{{ app.supportEmail }}</a>
+        </div>
+
         <div class="footer-link">
           <router-link :to="`/apps/${app.slug}/privacy`" class="link">
             Privacy Policy →

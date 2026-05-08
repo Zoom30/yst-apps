@@ -9,6 +9,7 @@ export interface AppEntry {
   playStoreUrl: string // set to '' to hide the badge
   appStoreUrl: string // set to '' to hide the badge
   privacyPolicy: string // HTML string
+  supportEmail: string // support contact email
 }
 
 export const apps: AppEntry[] = [
@@ -28,6 +29,7 @@ export const apps: AppEntry[] = [
     ],
     playStoreUrl: 'https://play.google.com/store/apps/details?id=com.yst.commitr',
     appStoreUrl: '',
+    supportEmail: 'commitr@yellowstonetechnologies.co.uk',
     privacyPolicy: `
       <h2>Privacy Policy</h2>
       <p>Last updated: April 4, 2026</p>
@@ -114,7 +116,7 @@ export const apps: AppEntry[] = [
       <h3>Contact</h3>
       <p>
         If you have any questions about this Privacy Policy, feel free to
-        reach out via the contact details on our website.
+        reach out at <a href="mailto:commitr@yellowstonetechnologies.co.uk">commitr@yellowstonetechnologies.co.uk</a>.
       </p>
     `,
   },
