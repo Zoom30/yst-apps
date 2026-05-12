@@ -27,7 +27,7 @@ export const apps: AppEntry[] = [
       'Export and import your data as JSON for easy backups',
     ],
     playStoreUrl: 'https://play.google.com/store/apps/details?id=com.yst.commitr',
-    appStoreUrl: '',
+    appStoreUrl: 'https://apps.apple.com/us/app/commitr/id6767057806',
     privacyPolicy: `
       <h2>Privacy Policy</h2>
       <p>Last updated: April 4, 2026</p>
