@@ -32,7 +32,7 @@ export const apps: AppEntry[] = [
     supportEmail: 'commitr@yellowstonetechnologies.co.uk',
     privacyPolicy: `
       <h2>Privacy Policy</h2>
-      <p>Last updated: April 4, 2026</p>
+      <p>Last updated: October 17, 2026</p>
       <p>
         Your privacy matters. This Privacy Policy explains how
         <strong>Commitr</strong> handles information when you use our app.
@@ -41,15 +41,46 @@ export const apps: AppEntry[] = [
       <h3>Information We Collect</h3>
       <p>
         Commitr does not collect any personally identifiable information.
-        There are no accounts, no sign-ups, and no data sent to external
-        servers. All commitment data — including titles, descriptions, dates,
-        amounts, notes, custom fields, and file attachments — is stored
-        exclusively on your device in a local database.
+        There are no accounts, no sign-ups, and no commitment data is ever
+        sent to external servers. All commitment data - including titles,
+        descriptions, dates, amounts, notes, custom fields, and file
+        attachments - is stored exclusively on your device in a local
+        database. The only internet connection Commitr ever makes is the
+        optional model download covered in its own section below, and it
+        sends none of this data.
+      </p>
+      <p>
+        Your commitments and attachments are left out of your phone's cloud
+        backups (Google, iCloud). To move them to a new phone, use Export
+        &amp; Import; on Android 12 and later, direct phone-to-phone transfer
+        also carries them (locked attachments excepted).
       </p>
       <p>
         Your app preferences (theme, accent colour, currency, and default
-        billing cycle) are saved locally using on-device storage and are
-        never transmitted.
+        billing cycle) are stored on your device and never sent anywhere by
+        Commitr. On iPhone, your phone's own backup may include these display
+        settings, but never your commitments or files.
+      </p>
+
+      <h3>Optional On-Device Model Download</h3>
+      <p>
+        Settings offers an optional "Enhanced accuracy" model that improves
+        how well Commitr reads documents during import. Only when you tap
+        Download there does Commitr connect to the internet: it downloads the
+        model file from Hugging Face (huggingface.co and its content-delivery
+        servers on hf.co). The download is offered on Android, where the file
+        is about 2.6 GB. iPhones with Apple Intelligence use Apple's built-in
+        model and download nothing; other iPhones are not offered the
+        download at present. A model downloaded earlier can be deleted in
+        Settings.
+      </p>
+      <p>
+        This download sends no personal data and no document content - only
+        what any web request sends, such as your IP address. Once the file is
+        downloaded and verified, the model runs entirely on your device, and
+        your documents never leave it. On Android it runs on LiteRT-LM, an
+        open-source runtime that works offline and never connects to the
+        internet.
       </p>
 
       <h3>Biometric Authentication &amp; Encryption</h3>
@@ -63,14 +94,15 @@ export const apps: AppEntry[] = [
         When a commitment is locked, its file attachments are encrypted
         on-device using AES-256-CBC. The encryption key is generated once
         and kept in your device's secure storage (Android Keystore / iOS
-        Keychain). Commitr cannot retrieve this key remotely, and it never
-        leaves your device.
+        Keychain). Commitr never sends this key anywhere and cannot retrieve
+        it remotely. On iPhone, the Keychain may include it, encrypted, in
+        your phone's own backup.
       </p>
 
       <h3>Notifications</h3>
       <p>
         If you grant notification permission, it is used solely to deliver
-        reminders for commitment dates you have set — for example, upcoming
+        reminders for commitment dates you have set - for example, upcoming
         renewals or expiries. Exact-alarm and boot-completed permissions
         ensure your reminders survive device restarts. These permissions
         are never used for marketing or promotional communications.
@@ -81,7 +113,7 @@ export const apps: AppEntry[] = [
         Commitr allows you to attach files (receipts, contracts, documents)
         to your commitments. These files are stored locally on your device.
         When you use the share or open feature, the file is handed to your
-        device's built-in sharing or file-opening mechanism — Commitr does
+        device's built-in sharing or file-opening mechanism - Commitr does
         not upload files to any server.
       </p>
 
